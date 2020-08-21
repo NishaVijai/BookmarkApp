@@ -8,15 +8,25 @@ export default function VideoTutorialsContainer(props) {
         <h3>{props.level}</h3>
         <li>
           {props.language}
-          {props.name}
-
+          {/* <img
+            src={props.img}
+            alt={props.alt}
+            loading="lazy"
+            title={props.alt}
+          /> */}
           <a
             href={props.url}
             target="_blank"
             rel="noopener  noreferrer"
             title={props.name}
           >
-            <img src={props.img} alt={props.alt} loading="lazy" />
+            {props.name}
+            <img
+              src={props.img}
+              alt={props.alt}
+              loading="lazy"
+              title={props.alt}
+            />
           </a>
         </li>
       </ul>

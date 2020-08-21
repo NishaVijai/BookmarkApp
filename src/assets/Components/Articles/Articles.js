@@ -6,13 +6,13 @@ export default class Articles extends Component {
     const ArticlesComponent = LinksData.map((link) => (
       <VideoTutorialsContainer
         key={link.id}
-        title={link.linkTitle}
-        url={link.linkURL}
-        name={link.linkName}
-        language={link.linkLanguage}
-        level={link.linkLevel}
-        img={link.linkImg}
-        alt={link.linkAlt}
+        title={link.articleTitle}
+        url={link.articleURL}
+        name={link.articleName}
+        language={link.articleLanguage}
+        level={link.articleLevel}
+        img={link.articleImg}
+        alt={link.articleAlt}
       />
     ));
     return <section>{ArticlesComponent}</section>;
