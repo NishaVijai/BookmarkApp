@@ -15,6 +15,11 @@ export default class InteractiveTuts extends Component {
         alt={link.interactiveAlt}
       />
     ));
-    return <section>{InteractiveTutorialsComponent}</section>;
+    return (
+      <section>
+        <h2>Interactive Tutorial Section</h2>
+        {InteractiveTutorialsComponent}
+      </section>
+    );
   }
 }

@@ -12,7 +12,39 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+main {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+.video-tut-section {
+  /* text-align: left; */
+}
+
+.video-tut-section-ul {
+  background-color: bisque;
+}
+
+.video-tut-section ul li {
+  /* align-content: center; */
+  /* display: flex;
+  justify-content: space-between; */
+  /* text-align: center; */
+  /* margin: auto;
+  padding: 5px; */
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-columns: 200px 200px 200px 1fr;
+}
+
+.video-tut-section ul li a {
+  /* display: flex; */
+  /* vertical-align: center; */
+}
+
+.video-tut-section ul li a img {
+  /* vertical-align: center; */
 }

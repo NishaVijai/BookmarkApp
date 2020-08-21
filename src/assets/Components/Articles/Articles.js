@@ -15,6 +15,11 @@ export default class Articles extends Component {
         alt={link.articleAlt}
       />
     ));
-    return <section>{ArticlesComponent}</section>;
+    return (
+      <section>
+        <h2>Article Section</h2>
+        {ArticlesComponent}
+      </section>
+    );
   }
 }

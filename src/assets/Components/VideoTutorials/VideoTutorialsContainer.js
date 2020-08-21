@@ -2,11 +2,18 @@ import React from "react";
 
 export default function VideoTutorialsContainer(props) {
   return (
-    <section>
-      <h2>{props.title}</h2>
-      <ul>
-        <h3>{props.level}</h3>
+    <section className="video-tut-section">
+      {/* <h2>{props.title}</h2> */}
+      <ul className="video-tut-section-ul">
         <li>
+          <img
+            src={props.img}
+            alt={props.alt}
+            loading="lazy"
+            title={props.alt}
+          />
+          {/* {props.level} */}
+          <h3>{props.level}</h3>
           {props.language}
           {/* <img
             src={props.img}
@@ -14,6 +21,7 @@ export default function VideoTutorialsContainer(props) {
             loading="lazy"
             title={props.alt}
           /> */}
+
           <a
             href={props.url}
             target="_blank"
@@ -21,15 +29,17 @@ export default function VideoTutorialsContainer(props) {
             title={props.name}
           >
             {props.name}
-            <img
+            {/* <img
               src={props.img}
               alt={props.alt}
               loading="lazy"
               title={props.alt}
-            />
+            /> */}
           </a>
         </li>
+        {/* <hr /> */}
       </ul>
+      {/* <hr /> */}
     </section>
   );
 }

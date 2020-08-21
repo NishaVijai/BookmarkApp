@@ -15,6 +15,11 @@ export default class VideoTutorials extends Component {
         alt={link.linkAlt}
       />
     ));
-    return <section>{VideoTutorialsComponent}</section>;
+    return (
+      <section>
+        <h2>Video Tutorial Section</h2>
+        {VideoTutorialsComponent}
+      </section>
+    );
   }
 }
