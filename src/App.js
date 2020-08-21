@@ -1,10 +1,10 @@
-import React from 'react';
-import BookmarkMain from '../src/Components/BookmarkMain'
+import React from "react";
+import BookmarkMain from "../src/assets/Components/BookmarkMain";
 
 function App() {
   return (
     <div className="App">
-     <BookmarkMain />
+      <BookmarkMain />
     </div>
   );
 }
