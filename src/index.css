@@ -1,6 +1,7 @@
 :root {
   --main-bg-color: rgb(255, 251, 251);
-  --anchor-color: rgb(153, 45, 120);
+  --main-color: rgb(112, 102, 102);
+  --anchor-color: rgb(158, 34, 34);
   --anchor-hover-color: rgb(128, 30, 0);
   --anchor-focus-color: rgb(160, 118, 28);
   --ul-bg-color: rgb(249, 255, 196);
@@ -17,6 +18,7 @@
 }
 
 body {
+  color: var(--main-color);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -37,10 +39,12 @@ main {
 
 h1 {
   font-size: 1.8rem;
+  padding: var(--p-5-px) 0;
 }
 
 h2 {
   font-size: 1.5rem;
+  padding: var(--p-5-px) 0;
   text-align: left;
 }
 
@@ -48,6 +52,7 @@ h3,
 h4 {
   font-size: 1.2rem;
   margin-left: var(--p-5-px);
+  padding: var(--p-5-px) 0;
 }
 
 a {
