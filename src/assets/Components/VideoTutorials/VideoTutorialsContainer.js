@@ -13,8 +13,8 @@ export default function VideoTutorialsContainer(props) {
             title={props.alt}
           />
           {/* {props.level} */}
-          <h3>{props.level}</h3>
-          <h4>{props.language}</h4>
+          <p>{props.level}</p>
+          <p>{props.language}</p>
           {/* <img
             src={props.img}
             alt={props.alt}
