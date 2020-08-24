@@ -12,11 +12,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 1rem;
   height: 100vh;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  max-width: 100%;
   width: 100vw;
 }
 
 main {
+  border: 2px solid red;
+  background-color: rgb(255, 251, 251);
   text-align: center;
 }
 
@@ -35,39 +38,44 @@ h4 {
   margin-left: 5px;
 }
 
-ul li {
-  /* list-style: none; */
-}
-
 a {
+  color: rgb(153, 45, 120);
   font-size: 1.2rem;
   text-decoration: none;
 }
 
 a:hover,
 a:active {
-  color: green;
+  color: rgb(128, 30, 0);
   font-weight: bold;
   text-decoration: underline;
+  transition: 0.2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
 }
 
 a:focus {
-  color: yellowgreen;
+  color: rgb(160, 118, 28);
+  font-size: 1.3rem;
   font-weight: bold;
   text-decoration: underline;
 }
 
 .video-tut-section-ul {
-  background-color: bisque;
+  background-color: rgb(249, 255, 196);
 }
 
 .video-tut-section ul li {
+  align-items: center;
   border-bottom: 1px solid red;
   display: grid;
+  justify-content: center;
   grid-gap: 5px;
   /* grid-template-columns: 150px 200px 300px 1fr; */
   grid-template-columns:
-    minmax(10%, 1fr)
+    minmax(5%, 1fr)
     minmax(20%, 1fr)
     minmax(20%, 1fr)
     minmax(50%, 1fr);
@@ -98,6 +106,10 @@ a:focus {
     font-size: 0.8rem;
   }
 
+  a {
+    font-size: 1rem;
+  }
+
   .video-tut-section-ul h3 {
     display: none;
   }
@@ -106,6 +118,11 @@ a:focus {
     grid-template-columns:
       minmax(10%, 1fr)
       minmax(30%, 1fr)
-      minmax(60%, 1fr);
+      minmax(55%, 1fr);
+  }
+
+  .video-tut-section-ul li img {
+    height: 40px;
+    width: 40px;
   }
 }
