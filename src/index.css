@@ -1,3 +1,15 @@
+:root {
+  --main-bg-color: rgb(255, 251, 251);
+  --anchor-color: rgb(153, 45, 120);
+  --anchor-hover-color: rgb(128, 30, 0);
+  --anchor-focus-color: rgb(160, 118, 28);
+  --ul-bg-color: rgb(249, 255, 196);
+  --border-bottom-color: rgb(199, 117, 10);
+  --p-5-px: 0.3125rem;
+  --p-40-px: 2.5rem;
+  --p-50-px: 3.125rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,8 +30,8 @@ body {
 }
 
 main {
-  border: 2px solid red;
-  background-color: rgb(255, 251, 251);
+  background-color: var(--main-bg-color);
+  padding: var(--p-5-px);
   text-align: center;
 }
 
@@ -35,56 +47,56 @@ h2 {
 h3,
 h4 {
   font-size: 1.2rem;
-  margin-left: 5px;
+  margin-left: var(--p-5-px);
 }
 
 a {
-  color: rgb(153, 45, 120);
+  color: var(--anchor-color);
   font-size: 1.2rem;
   text-decoration: none;
 }
 
 a:hover,
 a:active {
-  color: rgb(128, 30, 0);
+  color: var(--anchor-hover-color);
   font-weight: bold;
   text-decoration: underline;
-  transition: 0.2s ease-out;
-  -webkit-transition: 0.2s ease-out;
-  -moz-transition: 0.2s ease-out;
-  -ms-transition: 0.2s ease-out;
-  -o-transition: 0.2s ease-out;
+  transition: 0.1s ease-out;
+  -webkit-transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  -ms-transition: 0.1s ease-out;
+  -o-transition: 0.1s ease-out;
 }
 
 a:focus {
-  color: rgb(160, 118, 28);
+  color: var(--anchor-focus-color);
   font-size: 1.3rem;
   font-weight: bold;
   text-decoration: underline;
 }
 
 .video-tut-section-ul {
-  background-color: rgb(249, 255, 196);
+  background-color: var(--ul-bg-color);
 }
 
 .video-tut-section ul li {
   align-items: center;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid var(--border-bottom-color);
   display: grid;
   justify-content: center;
-  grid-gap: 5px;
+  grid-gap: var(--p-5-px);
   /* grid-template-columns: 150px 200px 300px 1fr; */
   grid-template-columns:
     minmax(5%, 1fr)
     minmax(20%, 1fr)
     minmax(20%, 1fr)
     minmax(50%, 1fr);
-  padding: 5px;
+  padding: var(--p-5-px);
 }
 
 .video-tut-section-ul li img {
-  height: 50px;
-  width: 50px;
+  height: var(--p-50-px);
+  width: var(--p-50-px);
 }
 
 /* Media Query */
@@ -122,7 +134,7 @@ a:focus {
   }
 
   .video-tut-section-ul li img {
-    height: 40px;
-    width: 40px;
+    height: var(--p-40-px);
+    width: var(--p-40-px);
   }
 }
