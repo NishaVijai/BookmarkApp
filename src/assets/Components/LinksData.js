@@ -3,6 +3,13 @@ import MediumImg from "../Images/medium-monogram.svg";
 import DevToImg from "../Images/devto-icon.svg";
 import EggHeadImg from "../Images/eggheadio-icon.svg";
 import FreeCodeCampImg from "../Images/free-code-camp.svg";
+import BitDegreeImg from "../Images/bitdegree.svg";
+import ScotchIOImg from "../Images/scotch-1.svg";
+import CodeCademyImg from "../Images/codecademy.svg";
+import ScrimbaImg from "../Images/scrimba.png";
+import ProgramizImg from "../Images/programiz.png";
+import DataQuestImg from "../Images/dataQuest.png";
+import DataCampImg from "../Images/DataCamp.png";
 
 const LinksData = [
   {
@@ -48,6 +55,14 @@ const LinksData = [
     articleLevel: "Beginner",
     articleImg: MediumImg,
     articleAlt: "Medium Website Logo Image",
+    interactiveTitle: "Interactive Tutorials",
+    interactiveURL:
+      "https://www.bitdegree.org/user/course/coding-for-beginners-space-doggos/151546",
+    interactiveName: "Coding for beginners",
+    interactiveLanguage: "HTML-CSS",
+    interactiveLevel: "Beginner",
+    interactiveImg: BitDegreeImg,
+    interactiveAlt: "BitDegree Site Logo Image",
   },
   {
     id: 3,
@@ -67,6 +82,14 @@ const LinksData = [
     articleLevel: "Front End",
     articleImg: DevToImg,
     articleAlt: "DevTo Website Logo Image",
+    interactiveTitle: "Interactive Tutorials",
+    interactiveURL:
+      "https://scotch.io/starters/react/getting-started-with-react-2019-edition?ref=home-start-here",
+    interactiveName: "getting-started-with-react-2019",
+    interactiveLanguage: "React",
+    interactiveLevel: "Beginner",
+    interactiveImg: ScotchIOImg,
+    interactiveAlt: "Scotch IO Site Logo Image",
   },
   {
     id: 4,
@@ -85,6 +108,14 @@ const LinksData = [
     articleLevel: "Interview",
     articleImg: FreeCodeCampImg,
     articleAlt: "FreeCodeCamp Website Logo Image",
+    interactiveTitle: "Interactive Tutorials",
+    interactiveURL:
+      "https://www.codecademy.com/courses/introduction-to-javascript/lessons/loops/exercises/while",
+    interactiveName: "introduction-to-javascript",
+    interactiveLanguage: "JavaScript",
+    interactiveLevel: "Beginner",
+    interactiveImg: CodeCademyImg,
+    interactiveAlt: "CodeCademy Site Logo Image",
   },
   {
     id: 5,
@@ -104,6 +135,13 @@ const LinksData = [
     articleLevel: "Beginner to Expert",
     articleImg: DevToImg,
     articleAlt: "DevTo Website Logo Image",
+    interactiveTitle: "Interactive Tutorials",
+    interactiveURL: "https://scrimba.com/p/pNpZMAB/cqREnqHw",
+    interactiveName: "Python 101",
+    interactiveLanguage: "Python",
+    interactiveLevel: "Beginner",
+    interactiveImg: ScrimbaImg,
+    interactiveAlt: "Scrimba Site Logo Image",
   },
   {
     id: 6,
@@ -122,6 +160,14 @@ const LinksData = [
     articleLevel: "Interview",
     articleImg: MediumImg,
     articleAlt: "Medium Website Logo Image",
+    interactiveTitle: "Interactive Tutorials",
+    interactiveURL:
+      "https://www.programiz.com/python-programming/methods/string",
+    interactiveName: "Python Programming",
+    interactiveLanguage: "Python",
+    interactiveLevel: "Beginner",
+    interactiveImg: ProgramizImg,
+    interactiveAlt: "Programiz Site Logo Image",
   },
   {
     id: 7,
@@ -140,6 +186,14 @@ const LinksData = [
     articleLevel: "Interview",
     articleImg: MediumImg,
     articleAlt: "Medium Website Logo Image",
+    interactiveTitle: "Interactive Tutorials",
+    interactiveURL:
+      "https://app.dataquest.io/m/349/project%3A-learn-and-install-jupyter-notebook/1/jupyter-notebook",
+    interactiveName: "learn-and-install-jupyter-notebook",
+    interactiveLanguage: "Jupyter Notebook",
+    interactiveLevel: "Beginner",
+    interactiveImg: DataQuestImg,
+    interactiveAlt: "DataQuest Site Logo Image",
   },
   {
     id: 8,
@@ -159,6 +213,14 @@ const LinksData = [
     articleLevel: "Intermediate",
     articleImg: MediumImg,
     articleAlt: "Medium Website Logo Image",
+    interactiveTitle: "Interactive Tutorials",
+    interactiveURL:
+      "https://campus.datacamp.com/courses/writing-efficient-python-code/foundations-for-efficiencies?ex=3",
+    interactiveName: "writing-efficient-python-code",
+    interactiveLanguage: "Python",
+    interactiveLevel: "Beginner",
+    interactiveImg: DataCampImg,
+    interactiveAlt: "DataCamp Site Logo Image",
   },
   {
     id: 9,
